@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tatenda Blessing Muchiriri | Equity & Montessori Education Speaker & Consultant</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/Tatenda3.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/your-project-id.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+ 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/books.css">
+
+  <style>
+    .tbm-contact-section {
+    font-family: 'Inter', sans-serif;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.tbm-contact-left {
+    padding: 3rem;
+}
+
+.tbm-contact-right {
+    background-image: url('assets/img/pot1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.tbm-contact-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.tbm-contact-subtext {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.tbm-contact-info {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.tbm-contact-info p {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.tbm-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tbm-contact-input,
+.tbm-contact-textarea {
+    width: 100%;
+    padding: 0.75rem 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+}
+
+.tbm-contact-input:focus,
+.tbm-contact-textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.tbm-contact-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.tbm-contact-button {
+    background: #e6a43c;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.tbm-contact-button:hover {
+    background: #d99732;
+}
+
+.tbm-contact-social {
+    margin-top: 2rem;
+}
+
+.tbm-contact-social p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.tbm-contact-social a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.tbm-contact-social a:hover {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .tbm-contact-section {
+        grid-template-columns: 1fr;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .tbm-contact-right {
+        display: none;
+    }
+
+    .tbm-contact-left {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tbm-contact-left {
+        padding: 1.5rem;
+    }
+
+    .tbm-contact-heading {
+        font-size: 1.75rem;
+    }
+
+    .tbm-contact-button {
+        width: 100%;
+    }
+}
+</style>
+
+</head>
+<body class="index-page">
+  
+        <div>
+
+            
+          <header id="header" class="header d-flex align-items-center fixed-top">
+            <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+              <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/img/Tatenda3.png" alt="Tatenda Muchiriri Logo" class="logo-image">
+              </a>
+
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="About.html">ABOUT</a></li>
+                  <li><a href="Services.html">SERVICES</a></li>
+                  <li><a href="Speaking.html">SPEAKING</a></li>
+                  <li><a href="Books.html" >BOOKS</a></li>
+                  <li><a href="Blog.html">INSIGHTS</a></li>
+                  
+                  </li>
+                  <li><a href="Contact.html"  class="active">CONTACT</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+
+              <!--<a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+
+            </div>
+          </header>
+
+          <section id="starter-section" class="starter-section section" style="background-color: #f7f3eb; ">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <a class="whimsical-button" href="">Book Tatenda</a>
+                
+              </div><!-- End Section Title -->
+      
+           
+          </section><!-- /Starter Section Section -->
+
+     <section class="tbm-contact-section">
+      <section class="tbm-contact-left">
+          <h1 class="tbm-contact-heading" ><span class="britt-header" style="font-family: 'Pacifico', cursive;">Contact Tatenda</span></h1>
+           <section class="tbm-contact-info">
+  
+              <p>EMAIL: tatenda@montessorionwheels.org</p>
+              <p>PHONE: 720-840-2974</p>
+          </section>
+
+          <form class="tbm-contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="67f4b868-8d17-4487-8f7a-7f06e06a6ebe">
+              <input class="tbm-contact-input" type="text" name="name" placeholder="Your Name" required>
+              <input class="tbm-contact-input" type="email" name="email" placeholder="Your Email" required>
+              <textarea class="tbm-contact-textarea" name="message" placeholder="Share Your Thoughts" required></textarea>
+              <button class="tbm-contact-button" type="submit">Send Message</button>
+          </form>
+
+          <section class="tbm-contact-social">
+              <p>Follow us here:</p>
+              <a href="https://www.linkedin.com/in/tatenda-blessing-muchiriri-1st-0326b3107/">LinkedIn</a>
+              
+          </section>
+      </section>
+      <section class="tbm-contact-right"></section>
+  </section>
+
+     
+    
+
+  <footer id="footer" class="footer position-relative light-background" style="background-color: #b24b22;color: white;">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename" style="color:white;">Tatenda Blessing Muchiriri- Chief Dreamer</span>
+          </a>
+          <div class="footer-contact pt-3">
+            
+            <p>Denver, Colorado</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>720-840-2974</span></p>
+            <p><strong>Email:</strong> <span>tatenda@montessorionwheels.org</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.linkedin.com/in/tatenda-blessing-muchiriri-1st-0326b3107/"><i class="bi bi-linkedin"></i></a>
+             
+          </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 style="color:#fff;">Useful Links</h4>
+          <ul>
+            <li><a href="index.html" style="color:white;">Home</a></li>
+            <li><a href="About.html" style="color:white;">About</a></li>
+            <li><a href="Services.html" style="color:white;">Services</a></li>
+          </ul>
+        </div>
+    
+        
+    
+       <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div> -->
+    
+      </div>
+    </div>
+    
+    <div class="container copyright text-center mt-4">
+      <p>© <span></span> <strong class="px-1 sitename">Tatenda Blessing Muchiriri</strong><span>.All Rights Reserved</span></p>
+    </div>
+    
+    </footer>
+    
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+ <script src="assets/js/resources.js"></script>
+
+        </div>
+    
+  
+</body>
+</html>
